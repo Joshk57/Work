@@ -30,4 +30,16 @@ var divide = function(dividend, divisor) {
 
 dividend = 10, divisor = 3
 // dividend = 7, divisor = -3
-console.log(divide(dividend, divisor))
+// console.log(divide(dividend, divisor))
+
+// 30. Substring with Concatenation of All Words
+
+
+var findSubstring = function(s, words) {
+    
+};
+
+s = "barfoothefoobarman", words = ["foo","bar"]
+// s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]
+// s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]
+console.log(findSubstring(s, words))
