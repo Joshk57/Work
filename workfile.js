@@ -112,3 +112,14 @@ nums = [1, 2, 3]
 // nums = [3, 2, 1]
 // nums = [1, 1, 5]
 // console.log(nextPermutation(nums))
+
+// 32. Longest Valid Paranthesis
+
+var longestValidParentheses = function(s) {
+    
+};
+
+s = "(()"
+// s = ")()())"
+// s = ""
+// console.log(longestValidParentheses(s))
