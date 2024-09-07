@@ -90,6 +90,15 @@ var nextPermutation = function(nums) {
     
 };
 
+function swap(nums, i, j) {
+    [nums[i], nums[j]] = [nums[j], nums[i]]
+}
+
+function reverse(nums, start) {
+    let end = nums.length-1
+    while (start < end) 
+        swap(nums, start++, end--);
+}
 
 nums = [1, 2, 3]
 // nums = [3, 2, 1]
