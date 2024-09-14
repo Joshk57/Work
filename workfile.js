@@ -169,5 +169,21 @@ var solveSudoku = function(board) {
     
 };
 
+let dfs = (board, row, column) => {
+    if (row === 9) return true;
+    if (column === 9) return dfs(board, row + 1, 0);
+    if (board[row][column] !== '.') return dfs(board, row, column + 1);
+  
+    for (let i = 1; i < 10; i++) {
+      if (isValid(board, row, column, i.toString())) {
+        board[row][column] = i.toString();
+        if (dfs(board, row, column + 1)) return true;
+        board[row][column] = '.';
+      }
+    }
+  
+    return false;
+  }
+
 // board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]
 console.log(solveSudoku(board))
