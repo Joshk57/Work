@@ -168,6 +168,25 @@ nums = [1,3,5,6], target = 5
 var solveSudoku = function(board) {
     
 };
+let isValid = (board, row, column, value) => {
+    let n = board.length;
+  
+    if (board[row].includes(value)) return false;
+  
+    for (let i = 0; i < n; i++) {
+      if (board[i][column] === value) return false;
+    }
+  
+    let [top, left] = [Math.floor(row / 3) * 3, Math.floor(column / 3) * 3];
+  
+    for (let i = top; i < top + 3; i++) {
+      for (let j = left; j < left + 3; j++) {
+        if (board[i][j] === value) return false;
+      }
+    }
+  
+    return true;
+  }
 
 let dfs = (board, row, column) => {
     if (row === 9) return true;
