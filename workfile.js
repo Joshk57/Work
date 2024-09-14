@@ -139,3 +139,17 @@ s = "(()"
 // s = ")()())"
 // s = ""
 // console.log(longestValidParentheses(s))
+
+
+
+// 35. Search Insert Position
+
+
+var searchInsert = function(nums, target) {
+    
+};
+
+nums = [1,3,5,6], target = 5
+// nums = [1,3,5,6], target = 2
+// nums = [1,3,5,6], target = 7
+// console.log(searchInsert(nums, target))
