@@ -228,6 +228,16 @@ function createContainers(str) {
     return say(arr);
 }
 
+
+function say(numStrArr) {
+    let str = ''
+    for(let i in numStrArr) str += numStrArr[i].length + numStrArr[i][0];
+    
+    return str;
+}
+
+
+
 n = 4
 n = 1
 console.log(countAndSay(n))
