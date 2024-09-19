@@ -35,49 +35,49 @@ dividend = 10, divisor = 3
 // 30. Substring with Concatenation of All Words
 
 
-var findSubstring = function(s, words) {
-    let result = [],
-        pattern = {},
-        wordLength = words[0].length;
+// var findSubstring = function(s, words) {
+//     let result = [],
+//         pattern = {},
+//         wordLength = words[0].length;
 
-    for (const word of words) {
-        pattern[word] = (pattern[word] || 0) + 1;
-    }
+//     for (const word of words) {
+//         pattern[word] = (pattern[word] || 0) + 1;
+//     }
 
-    for (let i = 0; i < wordLength; i++) {
-        let back = i,
-            front = back + wordLength,
-            matches = {},
-            count = 0
+//     for (let i = 0; i < wordLength; i++) {
+//         let back = i,
+//             front = back + wordLength,
+//             matches = {},
+//             count = 0
 
-        while (front <= s.length) {
-            let word = s.slice(front - wordLength, front);
+//         while (front <= s.length) {
+//             let word = s.slice(front - wordLength, front);
 
-            if (pattern[word]) {
-                matches[word] = (matches[word] ?? 0) + 1;
-                count++;
+//             if (pattern[word]) {
+//                 matches[word] = (matches[word] ?? 0) + 1;
+//                 count++;
 
-                while (matches[word] > pattern[word]) {
-                    matches[s.slice(back, back + wordLength)] -= 1;
-                    back += wordLength;
-                    count--;
-                }
+//                 while (matches[word] > pattern[word]) {
+//                     matches[s.slice(back, back + wordLength)] -= 1;
+//                     back += wordLength;
+//                     count--;
+//                 }
 
-                if (count === words.length) {
-                    result.push(back)
-                }                
-            } else {
-                matches = {}
-                count = 0;
-                back = front;
-            }
+//                 if (count === words.length) {
+//                     result.push(back)
+//                 }                
+//             } else {
+//                 matches = {}
+//                 count = 0;
+//                 back = front;
+//             }
 
-            front += wordLength;
-        }
-    }
+//             front += wordLength;
+//         }
+//     }
 
-    return result;    
-};
+//     return result;    
+// };
 
 s = "barfoothefoobarman", words = ["foo","bar"]
 // s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]
@@ -212,7 +212,11 @@ let dfs = (board, row, column) => {
 /// 38. Count and Say
 
 var countAndSay = function(n) {
-    
+    if(n==1) return '1';
+    let str = '1';
+    for(let i=1; i<n; i++) str = createContainers(str);
+     
+    return str;     
 };
 
 function createContainers(str) {
@@ -235,9 +239,25 @@ function say(numStrArr) {
     
     return str;
 }
+var countAndSay = function(n) {
+    if(n==1) return '1';
+    let str = '1';
+    for(let i=1; i<n; i++) str = createContainers(str); 
+    return str; 
+};
+
+function createContainers(str) {
+    let frequency = 1, string = '';
+    for(let i=0; i<str.length; i++) {
+        if(str[i] != str[i+1]) {
+            string += frequency + str[i];
+            frequency = 1;
+        } else frequency++;
+    }
+    return string;
+}
 
 
-
-n = 4
+// n = 4
 n = 1
 console.log(countAndSay(n))
