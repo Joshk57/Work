@@ -260,4 +260,15 @@ function createContainers(str) {
 
 // n = 4
 n = 1
-console.log(countAndSay(n))
+// console.log(countAndSay(n))
+
+// 39. Combination Sum
+
+var combinationSum = function(candidates, target) {
+    
+};
+
+candidates = [2,3,6,7], target = 7
+// candidates = [2,3,5], target = 8
+// candidates = [2], target = 1
+console.log(combinationSum(candidates, target))
