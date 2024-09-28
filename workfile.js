@@ -329,3 +329,14 @@ nums = [1,2,0]
 // nums = [3,4,-1,1]
 // nums = [7,8,9,11,12]
 // console.log(firstMissingPositive(nums))
+
+
+// 42. Trapping Rain Water
+
+var trap = function(height) {
+    
+};
+
+height = [0,1,0,2,1,0,1,3,2,1,2,1]
+// height = [4,2,0,3,2,5]
+console.log(trap(height))
