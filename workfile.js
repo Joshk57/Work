@@ -277,7 +277,31 @@ candidates = [2,3,6,7], target = 7
 // 40. Combination Sum II
 
 var combinationSum2 = function(candidates, target) {
+    let results = [];
     
+    candidates.sort((a, b) => a - b);
+
+    function backtrack(start, target, currentCombination) {
+        if (target === 0) {
+            results.push([...currentCombination]);
+            return;
+        }
+        
+        for (let i = start; i < candidates.length; i++) {
+            if (i > start && candidates[i] === candidates[i - 1]) continue;
+            if (candidates[i] > target) break;
+            currentCombination.push(candidates[i]);
+            
+            backtrack(i + 1, target - candidates[i], currentCombination);
+
+            currentCombination.pop();
+        }
+    }
+
+
+    backtrack(0, target, []);
+    
+    return results;   
 };
 
 candidates = [10,1,2,7,6,1,5], target = 8
