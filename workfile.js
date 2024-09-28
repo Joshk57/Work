@@ -311,10 +311,21 @@ candidates = [10,1,2,7,6,1,5], target = 8
 
 // 41. First Missing Positive
 var firstMissingPositive = function(nums) {
-    
+    nums.sort((a, b) => a - b);
+
+    let missing = 1;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > 0 && nums[i] === missing) {
+        missing++;
+        } else if (nums[i] > missing) {
+        return missing;
+        }
+    }
+
+    return missing;     
 };
 
 nums = [1,2,0]
 // nums = [3,4,-1,1]
 // nums = [7,8,9,11,12]
-console.log(firstMissingPositive(nums))
+// console.log(firstMissingPositive(nums))
