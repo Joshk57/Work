@@ -306,4 +306,15 @@ var combinationSum2 = function(candidates, target) {
 
 candidates = [10,1,2,7,6,1,5], target = 8
 // candidates = [2,5,2,1,2], target = 5
-console.log(combinationSum2(candidates, target))
+// console.log(combinationSum2(candidates, target))
+
+
+// 41. First Missing Positive
+var firstMissingPositive = function(nums) {
+    
+};
+
+nums = [1,2,0]
+// nums = [3,4,-1,1]
+// nums = [7,8,9,11,12]
+console.log(firstMissingPositive(nums))
