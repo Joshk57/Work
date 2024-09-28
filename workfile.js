@@ -271,4 +271,15 @@ var combinationSum = function(candidates, target) {
 candidates = [2,3,6,7], target = 7
 // candidates = [2,3,5], target = 8
 // candidates = [2], target = 1
-console.log(combinationSum(candidates, target))
+// console.log(combinationSum(candidates, target))
+
+
+// 40. Combination Sum II
+
+var combinationSum2 = function(candidates, target) {
+    
+};
+
+candidates = [10,1,2,7,6,1,5], target = 8
+// candidates = [2,5,2,1,2], target = 5
+console.log(combinationSum2(candidates, target))
