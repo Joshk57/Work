@@ -358,4 +358,14 @@ var trap = function(height) {
 
 height = [0,1,0,2,1,0,1,3,2,1,2,1]
 // height = [4,2,0,3,2,5]
-console.log(trap(height))
+// console.log(trap(height))
+
+// 43. Multiply Strings
+
+var multiply = function(num1, num2) {
+    
+};
+
+num1 = "2", num2 = "3"
+// num1 = "123", num2 = "456"
+console.log(multiply(num1, num2))
