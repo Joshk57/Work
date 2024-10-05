@@ -381,4 +381,12 @@ var multiply = function(num1, num2) {
 
 num1 = "2", num2 = "3"
 // num1 = "123", num2 = "456"
-console.log(multiply(num1, num2))
+// console.log(multiply(num1, num2))
+
+
+//44. Wildcard Matching
+
+var isMatch = function(s, p) {
+    
+};
+
