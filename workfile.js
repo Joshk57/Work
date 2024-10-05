@@ -334,7 +334,11 @@ nums = [1,2,0]
 // 42. Trapping Rain Water
 
 var trap = function(height) {
-    
+    let left = 0;
+    let right = height.length - 1;
+    let leftMax = height[left];
+    let rightMax = height[right];
+    let water = 0;    
 };
 
 height = [0,1,0,2,1,0,1,3,2,1,2,1]
