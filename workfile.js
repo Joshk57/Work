@@ -389,4 +389,7 @@ num1 = "2", num2 = "3"
 var isMatch = function(s, p) {
     
 };
-
+s = "aa", p = "a"
+// s = "aa", p = "*"
+// s = "cb", p = "?a"
+console.log(isMatch(s, p))
