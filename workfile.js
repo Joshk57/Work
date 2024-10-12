@@ -453,7 +453,11 @@ nums = [2,3,1,1,4]
 // 46. Permutations
 
 var permute = function(nums) {
-    
+    let result = [];
+
+    permuteRec(nums, 0, result);
+
+    return result; 
 };
 
 function swapNums(nums, i, j) {
