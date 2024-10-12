@@ -456,6 +456,32 @@ var permute = function(nums) {
     
 };
 
+function swapNums(nums, i, j) {
+    let swapIndex = [...nums];
+    
+      let temp = swapIndex[j];
+      swapIndex[j] = swapIndex[i];
+      
+      swapIndex[i] = temp;
+    
+      return swapIndex
+    }
+    function permuteRec(nums, currentIndex, result) {
+        var swappedNums;
+    
+        if (currentIndex === nums.length - 1) {
+            result.push(nums);
+            return;
+        }
+    
+        for (var index = currentIndex; index < nums.length; index++) {
+            swappedNums = swapNums(nums, currentIndex, index);
+            permuteRec(swappedNums, currentIndex + 1, result);
+        }
+    }
+
+
+
 nums = [1,2,3]
 // nums = [0,1]
 // nums = [1]
