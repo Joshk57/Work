@@ -425,3 +425,14 @@ s = "aa", p = "a"
 // s = "aa", p = "*"
 // s = "cb", p = "?a"
 // console.log(isMatch(s, p))
+
+
+// 45. Jump Game II
+
+var jump = function(nums) {
+    
+};
+
+nums = [2,3,1,1,4]
+// nums = [2,3,0,1,4]
+console.log(jump(nums))
