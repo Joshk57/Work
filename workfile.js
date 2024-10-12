@@ -447,4 +447,16 @@ var jump = function(nums) {
 
 nums = [2,3,1,1,4]
 // nums = [2,3,0,1,4]
-console.log(jump(nums))
+// console.log(jump(nums))
+
+
+// 46. Permutations
+
+var permute = function(nums) {
+    
+};
+
+nums = [1,2,3]
+// nums = [0,1]
+// nums = [1]
+console.log(permute(nums))
