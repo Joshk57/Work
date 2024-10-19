@@ -489,4 +489,14 @@ function swapNums(nums, i, j) {
 nums = [1,2,3]
 // nums = [0,1]
 // nums = [1]
-console.log(permute(nums))
+// console.log(permute(nums))
+
+//47. Permutations II
+
+var permuteUnique = function(nums) {
+    
+};
+
+nums = [1,1,2]
+// nums = [1,2,3]
+console.log(permuteUnique(nums))
