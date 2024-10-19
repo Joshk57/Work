@@ -548,9 +548,20 @@ matrix = [[1,2,3],[4,5,6],[7,8,9]]
 // console.log(rotate(matrix))
 
 // 49. Group Anagrams
-
+function getKey(string){
+    return string.split('').sort().join('')
+ }
 var groupAnagrams = function(strs) {
- 
+    let hashMap = new Map();
+
+    for(let s of strs){
+        const key = getKey(s);
+        if(!hashMap[key]){
+            hashMap[key] =[];        
+        }
+       hashMap[key].push(s);
+    }
+    return Object.values(hashMap);
 };
 
 strs = ["eat","tea","tan","ate","nat","bat"]
