@@ -605,6 +605,21 @@ var solveNQueens = function(n) {
     
 };
 
+function solveNQueensRec(n, solution, row, results) {
+    if (row == n) {
+        const solutionStr = constructSolutionString(solution);
+        results.push(solutionStr);
+        return;
+    }
+
+    for (let i = 0; i < n; i++) {
+        let valid = isValidMove(row, i, solution);
+        if (valid) {
+            solution[row] = i;
+            solveNQueensRec(n, solution, row + 1, results);
+        }
+    }
+}
 n = 4
 // n = 1
 console.log(solveNQueens(n))
