@@ -596,4 +596,15 @@ if (n === 0) {
 x = 2.00000, n = 10
 // x = 2.10000, n = 3
 // x = 2.00000, n = -2
-console.log(myPow(x, n))
+// console.log(myPow(x, n))
+
+
+// 51. N-Queens
+
+var solveNQueens = function(n) {
+    
+};
+
+n = 4
+// n = 1
+console.log(solveNQueens(n))
