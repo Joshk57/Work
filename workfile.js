@@ -637,6 +637,16 @@ function isValidMove(proposedRow, proposedCol, solution) {
     }
     return true;
 }
+
+function constructSolutionString(solution) {
+    const returnArr = [];
+    for (i = 0; i < solution.length; i++) {
+        const returnStr = Array(solution.length).fill('.');
+        returnStr[solution[i]] = "Q";
+        returnArr.push(returnStr.join(''));
+    }
+    return returnArr;
+}
 n = 4
 // n = 1
 console.log(solveNQueens(n))
