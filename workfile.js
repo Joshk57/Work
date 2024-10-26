@@ -567,4 +567,16 @@ var groupAnagrams = function(strs) {
 strs = ["eat","tea","tan","ate","nat","bat"]
 // strs = [""]
 // strs = ["a"]
-console.log(groupAnagrams(strs))
+// console.log(groupAnagrams(strs))
+
+
+// 50. Pow(x, n)
+
+var myPow = function(x, n) {
+    
+};
+
+x = 2.00000, n = 10
+// x = 2.10000, n = 3
+// x = 2.00000, n = -2
+console.log(myPow(x, n))
