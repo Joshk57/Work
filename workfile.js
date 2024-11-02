@@ -683,6 +683,20 @@ function isValidMove(proposedRow, proposedCol, solution) {
     return true;
 }
 
+function solveNQueensRec(n, solution, row, results) {
+    if (row == n) {
+        results.push(solution);
+        return;
+    }
+
+    for (let i = 0; i < n; i++) {
+        let valid = isValidMove(row, i, solution);
+        if (valid) {
+            solution[row] = i;
+            solveNQueensRec(n, solution, row + 1, results);
+        }
+    }
+}
 
 n = 4 
 // n = 1
