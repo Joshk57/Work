@@ -666,6 +666,24 @@ var totalNQueens = function(n) {
     
 };
 
+function isValidMove(proposedRow, proposedCol, solution) {
+    for (let i = 0; i < proposedRow; i++) {
+        let oldRow = i,
+            oldCol = solution[i],
+            diagonalOffset = proposedRow - oldRow;
+
+        if (
+            oldCol == proposedCol ||
+            oldCol == proposedCol - diagonalOffset ||
+            oldCol == proposedCol + diagonalOffset
+        ) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
 n = 4 
 // n = 1
 console.log(totalNQueens(n))
