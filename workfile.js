@@ -703,4 +703,15 @@ function solveNQueensRec(n, solution, row, results) {
 
 n = 4 
 // n = 1
-console.log(totalNQueens(n))
+// console.log(totalNQueens(n))
+
+// 53. Maximum subarray
+
+var maxSubArray = function(nums) {
+    
+};
+
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+// nums = [1]
+// nums = [5,4,-1,7,8]
+console.log(maxSubArray(nums))
