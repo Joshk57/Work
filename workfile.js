@@ -663,7 +663,10 @@ n = 4
 // 52. N-Queens II
 
 var totalNQueens = function(n) {
-    
+    let results = [];
+    let solution = Array(n).fill(-1);
+    solveNQueensRec(n, solution, 0, results);
+    return results.length;
 };
 
 function isValidMove(proposedRow, proposedCol, solution) {
