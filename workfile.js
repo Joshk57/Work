@@ -602,7 +602,16 @@ x = 2.00000, n = 10
 // 51. N-Queens
 
 var solveNQueens = function(n) {
-    
+    if (n === 1) {
+        return [["Q"]];
+    }
+    if (n == 2 || n === 3) {
+        return [];
+    }
+    let results = [];
+    let solution = Array(n).fill(-1);
+    solveNQueensRec(n, solution, 0, results);
+    return results;    
 };
 
 function solveNQueensRec(n, solution, row, results) {
@@ -649,4 +658,14 @@ function constructSolutionString(solution) {
 }
 n = 4
 // n = 1
-console.log(solveNQueens(n))
+// console.log(solveNQueens(n))
+
+// 52. N-Queens II
+
+var totalNQueens = function(n) {
+    
+};
+
+n = 4 
+// n = 1
+console.log(totalNQueens(n))
