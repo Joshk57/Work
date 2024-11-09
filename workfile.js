@@ -731,7 +731,13 @@ nums = [-2,1,-3,4,-1,2,1,-5,4]
 // 54. Spiral Matrix
 
 var spiralOrder = function(matrix) {
-    
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    let x = 0;
+    let y = 0;
+    let dx = 1;
+    let dy = 0;
+    const res = [];    
 };
 
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
