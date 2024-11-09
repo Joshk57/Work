@@ -756,4 +756,14 @@ var spiralOrder = function(matrix) {
 
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
 // matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
-console.log(spiralOrder(matrix))
+// console.log(spiralOrder(matrix))
+
+// 56. Merge Intervals
+
+var merge = function(intervals) {
+    
+};
+
+intervals = [[1,3],[2,6],[8,10],[15,18]]
+// intervals = [[1,4],[4,5]]
+console.log(merge(intervals))
