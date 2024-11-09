@@ -726,4 +726,14 @@ var maxSubArray = function(nums) {
 nums = [-2,1,-3,4,-1,2,1,-5,4]
 // nums = [1]
 // nums = [5,4,-1,7,8]
-console.log(maxSubArray(nums))
+// console.log(maxSubArray(nums))
+
+// 54. Spiral Matrix
+
+var spiralOrder = function(matrix) {
+    
+};
+
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+// matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+console.log(spiralOrder(matrix))
