@@ -761,7 +761,22 @@ matrix = [[1,2,3],[4,5,6],[7,8,9]]
 // 56. Merge Intervals
 
 var merge = function(intervals) {
-    
+    intervals.sort((a, b) => a[0] - b[0]);
+    const merged = [];
+    let prev = intervals[0];
+
+    for (let i = 1; i < intervals.length; i++) {
+        let interval = intervals[i];
+        if (interval[0] <= prev[1]) {
+            prev[1] = Math.max(prev[1], interval[1]);
+        } else {
+            merged.push(prev);
+            prev = interval;
+        }
+    }
+
+    merged.push(prev);
+    return merged;    
 };
 
 intervals = [[1,3],[2,6],[8,10],[15,18]]
