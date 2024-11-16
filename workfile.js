@@ -805,4 +805,16 @@ var insert = function(intervals, newInterval) {
 
 intervals = [[1,3],[6,9]], newInterval = [2,5]
 // intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
-console.log(insert(intervals, newInterval))
+// console.log(insert(intervals, newInterval))
+
+
+// 58. Length of Last Word
+
+var lengthOfLastWord = function(s) {
+    
+};
+
+s = "Hello World"
+// s = "   fly me   to   the moon  "
+// s = "luffy is still joyboy"
+console.log(lengthOfLastWord(s))
