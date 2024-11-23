@@ -828,4 +828,14 @@ var lengthOfLastWord = function(s) {
 s = "Hello World"
 // s = "   fly me   to   the moon  "
 // s = "luffy is still joyboy"
-console.log(lengthOfLastWord(s))
+// console.log(lengthOfLastWord(s))
+
+// 59. Spiral Matrix II
+
+var generateMatrix = function(n) {
+    
+};
+
+n = 3
+// n = 1
+console.log(generateMatrix(n))
