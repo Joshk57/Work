@@ -864,6 +864,18 @@ var getPermutation = function(n, k) {
       arr.push(i);
       factorials[i] = factorials[i - 1] * i;
     }
+    const KthComb = [];
+    k--;
+    while (arr.length > 0) {
+      const availableLen = arr.length - 1;
+      let swapValue = Math.floor(k / factorials[availableLen]);
+      KthComb.push(arr[swapValue]);
+      arr.splice(swapValue, 1);
+      const remainder = k % factorials[availableLen];
+      k = k % factorials[availableLen];
+    }
+  
+    return KthComb.join("");
 };
 
 n = 3, k = 3
