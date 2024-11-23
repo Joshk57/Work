@@ -852,4 +852,16 @@ var generateMatrix = function(n) {
 
 n = 3
 // n = 1
-console.log(generateMatrix(n))
+// console.log(generateMatrix(n))
+
+
+// 60. Permutation Sequence
+
+var getPermutation = function(n, k) {
+    
+};
+
+n = 3, k = 3
+// n = 4, k = 9
+// n = 3, k = 1
+console.log(getPermutation(n, k))
