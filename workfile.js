@@ -858,7 +858,12 @@ n = 3
 // 60. Permutation Sequence
 
 var getPermutation = function(n, k) {
-    
+    const factorials = {0: 1};
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+      arr.push(i);
+      factorials[i] = factorials[i - 1] * i;
+    }
 };
 
 n = 3, k = 3
