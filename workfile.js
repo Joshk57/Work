@@ -922,4 +922,14 @@ var length = function (node) {
 
 head = [1,2,3,4,5], k = 2
 // head = [0,1,2], k = 4
-console.log(rotateRight(head, k))
+// console.log(rotateRight(head, k))
+
+// 62. Unique Paths
+
+var uniquePaths = function(m, n) {
+    
+};
+
+m = 3, n = 7
+// m = 3, n = 2
+// console.log(uniquePaths(m, n))
