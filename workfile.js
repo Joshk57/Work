@@ -948,9 +948,23 @@ m = 3, n = 7
 // 63. Unique Paths II
 
 var uniquePathsWithObstacles = function(obstacleGrid) {
-    
+    const m = obstacleGrid.length;
+    const n = obstacleGrid[0].length;
+    let memo = Array.from({ length: m }, () => Array(n).fill(-1));
+
+    function dfs(i, j) {
+        if (i >= m || j >= n || obstacleGrid[i][j] === 1) return 0;
+        if (i === m - 1 && j === n - 1) return 1;
+        if (memo[i][j] !== -1) return memo[i][j];
+
+        memo[i][j] = dfs(i + 1, j) + dfs(i, j + 1);
+
+        return memo[i][j];
+    }
+
+    return dfs(0, 0);
 };
 
 obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 // obstacleGrid = [[0,1],[0,0]]
-console.log(uniquePathsWithObstacles(obstacleGrid))
+// console.log(uniquePathsWithObstacles(obstacleGrid))
