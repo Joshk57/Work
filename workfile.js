@@ -891,6 +891,17 @@ var rotateRight = function(head, k) {
     
 };
 
+var length = function (node) {
+    let n = 0;
+
+    while (node) {
+        node = node.next
+        n++
+    }
+
+    return n
+}
+
 head = [1,2,3,4,5], k = 2
 // head = [0,1,2], k = 4
 console.log(rotateRight(head, k))
