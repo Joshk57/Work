@@ -881,4 +881,16 @@ var getPermutation = function(n, k) {
 n = 3, k = 3
 // n = 4, k = 9
 // n = 3, k = 1
-console.log(getPermutation(n, k))
+// console.log(getPermutation(n, k))
+
+
+
+// 61. Rotate List
+
+var rotateRight = function(head, k) {
+    
+};
+
+head = [1,2,3,4,5], k = 2
+// head = [0,1,2], k = 4
+console.log(rotateRight(head, k))
