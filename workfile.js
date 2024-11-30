@@ -943,3 +943,14 @@ var uniquePaths = function(m, n) {
 m = 3, n = 7
 // m = 3, n = 2
 // console.log(uniquePaths(m, n))
+
+
+// 63. Unique Paths II
+
+var uniquePathsWithObstacles = function(obstacleGrid) {
+    
+};
+
+obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+// obstacleGrid = [[0,1],[0,0]]
+console.log(uniquePathsWithObstacles(obstacleGrid))
