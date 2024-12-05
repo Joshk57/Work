@@ -1018,3 +1018,15 @@ s = "0"
 // s = "e"
 // s = "."
 // console.log(isNumber(s))
+
+
+// 66. Plus One
+
+var plusOne = function(digits) {
+    
+};
+
+digits = [1,2,3]
+// digits = [4,3,2,1]
+// digits = [9]
+console.log(plusOne(digits))
