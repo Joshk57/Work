@@ -1007,7 +1007,11 @@ grid = [[1,3,1],[1,5,1],[4,2,1]]
 // 65. Valid Number
 
 var isNumber = function(s) {
+    if(s == "Infinity" || s == "-Infinity" || s == "+Infinity"){
+        return false
+    }
     
+    return Number(s)+100 ? true : false
 };
 
 s = "0"
