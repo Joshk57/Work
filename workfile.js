@@ -973,7 +973,9 @@ obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 // 64. Minimum Path Sum
 
 var minPathSum = function(grid) {
-    
+    const minGrid = grid.map(row => row.map(_ => Infinity))
+    const m = grid.length - 1
+    const n = grid[0].length - 1 
 };
 
 grid = [[1,3,1],[1,5,1],[4,2,1]]
