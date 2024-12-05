@@ -968,3 +968,14 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
 obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 // obstacleGrid = [[0,1],[0,0]]
 // console.log(uniquePathsWithObstacles(obstacleGrid))
+
+
+// 64. Minimum Path Sum
+
+var minPathSum = function(grid) {
+    
+};
+
+grid = [[1,3,1],[1,5,1],[4,2,1]]
+// grid = [[1,2,3],[4,5,6]]
+console.log(minPathSum(grid))
