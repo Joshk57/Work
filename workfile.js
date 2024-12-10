@@ -1039,4 +1039,15 @@ var plusOne = function(digits) {
 digits = [1,2,3]
 // digits = [4,3,2,1]
 // digits = [9]
-console.log(plusOne(digits))
+// console.log(plusOne(digits))
+
+
+// 67. Add Binary
+
+var addBinary = function(a, b) {
+    
+};
+
+a = "11", b = "1"
+// a = "1010", b = "1011"
+console.log(addBinary(a, b))
