@@ -1107,8 +1107,20 @@ words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidt
 
 var mySqrt = function(x) {
     
-};
+    let num = 0
 
-x = 4
+    for (let i = 0; i < x; i++) {
+        if (i * i === x) {
+            return i
+        } else if ((i * i) > x) {
+            return num
+        } else {
+            num += 1
+        }
+    }
+}
+
+
+// x = 4
 // x = 8
 console.log(mySqrt(x))
