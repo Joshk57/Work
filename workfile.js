@@ -1067,4 +1067,16 @@ var addBinary = function(a, b) {
 
 a = "11", b = "1"
 // a = "1010", b = "1011"
-console.log(addBinary(a, b))
+// console.log(addBinary(a, b))
+
+
+// 68. Text Justification
+
+var fullJustify = function(words, maxWidth) {
+    
+};
+
+words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16
+// words = ["What","must","be","acknowledgment","shall","be"], maxWidth = 16
+// words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"], maxWidth = 20
+console.log(fullJustify(words, maxWidth))
