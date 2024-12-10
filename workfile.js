@@ -1100,4 +1100,15 @@ var fullJustify = function(words, maxWidth) {
 words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16
 // words = ["What","must","be","acknowledgment","shall","be"], maxWidth = 16
 // words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"], maxWidth = 20
-console.log(fullJustify(words, maxWidth))
+// console.log(fullJustify(words, maxWidth))
+
+
+// 69. Sqrt(x)
+
+var mySqrt = function(x) {
+    
+};
+
+x = 4
+// x = 8
+console.log(mySqrt(x))
