@@ -1165,7 +1165,28 @@ path = "/home/"
 // 72. Edit Distance
 
 var minDistance = function(word1, word2) {
-    
+    const cache = {}
+    function dp(i, j) {
+        if (cache[`${i}->${j}`] !== undefined) {
+            return cache[`${i}->${j}`]
+        }
+        if (i >= word1.length) {
+            return word2.length - j;
+        } 
+        if (j >= word2.length) {
+            return word1.length - i;
+        }
+        if (word1[i] === word2[j]) {
+            return dp(i+1, j+1);
+        }
+        let insert = 1 + dp(i, j+1);
+        let del = 1 + dp(i+1, j);
+        let repl = 1 + dp(i+1, j+1);
+        const res = Math.min(insert, del, repl);
+        cache[`${i}->${j}`] = res;
+        return res;
+    }
+    return dp(0, 0)
 };
 
 word1 = "horse", word2 = "ros"
