@@ -1135,3 +1135,15 @@ n = 2
 // n = 3
 // console.log(climbStairs(n))
 
+// 71. Simplify Path
+
+var simplifyPath = function(path) {
+    
+};
+
+path = "/home/"
+// path = "/home//foo/"
+// path = "/home/user/Documents/../Pictures"
+// path = "/../"
+// path = "/.../a/../b/c/../d/./"
+console.log(simplifyPath(path))
