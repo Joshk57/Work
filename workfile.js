@@ -1114,4 +1114,15 @@ var mySqrt = function(x) {
 
 // x = 4
 x = 8
-console.log(mySqrt(x))
+// console.log(mySqrt(x))
+
+
+// 70. Climbing Stairs
+
+var climbStairs = function(n) {
+
+};
+
+n = 2
+// n = 3
+// console.log(climbStairs(n))
