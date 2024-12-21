@@ -1159,4 +1159,15 @@ path = "/home/"
 // path = "/home/user/Documents/../Pictures"
 // path = "/../"
 // path = "/.../a/../b/c/../d/./"
-console.log(simplifyPath(path))
+// console.log(simplifyPath(path))
+
+
+// 72. Edit Distance
+
+var minDistance = function(word1, word2) {
+    
+};
+
+word1 = "horse", word2 = "ros"
+// word1 = "intention", word2 = "execution"
+// console.log(minDistance(word1, word2))
