@@ -1120,9 +1120,13 @@ x = 8
 // 70. Climbing Stairs
 
 var climbStairs = function(n) {
-
+    const dp = new Array(n + 1).fill(0);
+    dp[0] = 1;
+    dp[1] = 1;
+    
 };
 
 n = 2
 // n = 3
 // console.log(climbStairs(n))
+
