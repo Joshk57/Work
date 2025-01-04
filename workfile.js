@@ -1246,6 +1246,23 @@ var searchMatrix = function(matrix, target) {
     if(!(top <= bot)) {
         return false;
     }
+    
+    let row = Math.floor((top + bot) / 2);
+    let [left, right] = [0, cols - 1];
+
+    while(left <= right){
+        let mid = Math.floor((left + right) / 2);
+
+        if(target > matrix[row][mid]) {
+            left = mid + 1;
+        } else if(target < matrix[row][mid]) {
+            right = mid - 1;
+        } else if(target == matrix[row][mid]) {
+            return true;
+        }
+    }
+
+    return false; 
 };
 
 matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
