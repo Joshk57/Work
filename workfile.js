@@ -1192,3 +1192,13 @@ var minDistance = function(word1, word2) {
 word1 = "horse", word2 = "ros"
 // word1 = "intention", word2 = "execution"
 // console.log(minDistance(word1, word2))
+
+// 73. Set Matrix Zeroes
+
+var setZeroes = function(matrix) {
+    
+};
+
+matrix = [[1,1,1],[1,0,1],[1,1,1]]
+// matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+console.log(setZeroes(matrix))
