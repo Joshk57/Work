@@ -1209,6 +1209,15 @@ var setZeroes = function(matrix) {
             }
         }
     }
+
+    // Set matrix elements to zero based on marker array
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (zeros[i] === 1 || zeros[m + j] === 1) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
 };
 
 matrix = [[1,1,1],[1,0,1],[1,1,1]]
