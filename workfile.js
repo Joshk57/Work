@@ -1196,7 +1196,19 @@ word1 = "horse", word2 = "ros"
 // 73. Set Matrix Zeroes
 
 var setZeroes = function(matrix) {
-    
+    const m = matrix.length;
+    const n = matrix[0].length;
+    const zeros = Array(m + n).fill(0); // Marker array
+
+    // Mark rows and columns to be zeroed
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (matrix[i][j] === 0) {
+                zeros[i] = 1;
+                zeros[m + j] = 1;
+            }
+        }
+    }
 };
 
 matrix = [[1,1,1],[1,0,1],[1,1,1]]
