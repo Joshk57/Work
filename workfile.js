@@ -1222,4 +1222,16 @@ var setZeroes = function(matrix) {
 
 matrix = [[1,1,1],[1,0,1],[1,1,1]]
 // matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
-console.log(setZeroes(matrix))
+// console.log(setZeroes(matrix))
+
+
+// 74. Search a 2D Matrix
+
+
+var searchMatrix = function(matrix, target) {
+    
+};
+
+matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
+// matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
+console.log(searchMatrix(matrix, target))
