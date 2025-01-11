@@ -1246,7 +1246,7 @@ var searchMatrix = function(matrix, target) {
     if(!(top <= bot)) {
         return false;
     }
-    
+
     let row = Math.floor((top + bot) / 2);
     let [left, right] = [0, cols - 1];
 
@@ -1267,4 +1267,15 @@ var searchMatrix = function(matrix, target) {
 
 matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
 // matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
-console.log(searchMatrix(matrix, target))
+// console.log(searchMatrix(matrix, target))
+
+// 75. Sort Colors
+
+var sortColors = function(nums) {
+    
+};
+
+
+nums = [2,0,2,1,1,0]
+// nums = [2,0,1]
+// console.log(sortColors(nums))
