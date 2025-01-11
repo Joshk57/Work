@@ -1344,4 +1344,15 @@ var minWindow = function(s, t) {
 s = "ADOBECODEBANC", t = "ABC"
 // s = "a", t = "a"
 // s = "a", t = "aa"
-console.log(minWindow(s, t))
+// console.log(minWindow(s, t))
+
+
+// 77. Combinations
+
+var combine = function(n, k) {
+    
+};
+
+n = 4, k = 2
+// n = 1, k = 1
+console.log(combine(n, k))
