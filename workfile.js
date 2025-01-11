@@ -1298,7 +1298,18 @@ nums = [2,0,2,1,1,0]
 // 76. Minimum Window Substring
 
 var minWindow = function(s, t) {
-    
+    if (s.length < t.length) {
+        return "";
+    }
+
+    const charCount = new Map();
+    for (const ch of t) {
+        charCount.set(ch, (charCount.get(ch) || 0) + 1);
+    }
+
+    let targetCharsRemaining = t.length;
+    let minWindow = [0, Number.POSITIVE_INFINITY];
+    let startIndex = 0;
 };
 
 s = "ADOBECODEBANC", t = "ABC"
