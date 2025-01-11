@@ -1293,3 +1293,15 @@ var sortColors = function(nums) {
 nums = [2,0,2,1,1,0]
 // nums = [2,0,1]
 // console.log(sortColors(nums))
+
+
+// 76. Minimum Window Substring
+
+var minWindow = function(s, t) {
+    
+};
+
+s = "ADOBECODEBANC", t = "ABC"
+// s = "a", t = "a"
+// s = "a", t = "aa"
+console.log(minWindow(s, t))
