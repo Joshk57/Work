@@ -1350,7 +1350,24 @@ s = "ADOBECODEBANC", t = "ABC"
 // 77. Combinations
 
 var combine = function(n, k) {
-    
+    const res = [];
+    const comb = [];
+
+    function backtrack(start) {
+        if (comb.length === k) {
+            res.push([...comb]);
+            return;
+        }
+
+        for (let num = start; num <= n; num++) {
+            comb.push(num);
+            backtrack(num + 1);
+            comb.pop();
+        }
+    }
+
+    backtrack(1);
+    return res;    
 };
 
 n = 4, k = 2
