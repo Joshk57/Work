@@ -1444,4 +1444,15 @@ var exist = function(board, word) {
 board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
 // board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
 // board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
-console.log(exist(board, word))
+// console.log(exist(board, word))
+
+
+// 80. Remove Duplicates from Sorted Array II
+
+var removeDuplicates = function(nums) {
+    
+};
+
+nums = [1,1,1,2,2,3]
+// nums = [0,0,1,1,1,1,2,3,3]
+console.log(removeDuplicates(nums))
