@@ -1372,4 +1372,20 @@ var combine = function(n, k) {
 
 n = 4, k = 2
 // n = 1, k = 1
-console.log(combine(n, k))
+// console.log(combine(n, k))
+
+
+// 78. Subsets
+
+var subsets = function(nums) {
+    arr = [[]]
+
+    for (let i = 0; i < nums.length; i++) {
+        
+    }
+};
+
+
+nums = [1,2,3]
+// nums = [0]
+console.log(subsets(nums))
