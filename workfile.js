@@ -1401,4 +1401,16 @@ var subsets = function(nums) {
 
 nums = [1,2,3]
 // nums = [0]
-console.log(subsets(nums))
+// console.log(subsets(nums))
+
+
+// 79. Word Search
+
+var exist = function(board, word) {
+    
+};
+
+board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+// board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
+// board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
+console.log(exist(board, word))
