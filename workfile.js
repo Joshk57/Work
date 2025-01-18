@@ -1450,7 +1450,17 @@ board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
 // 80. Remove Duplicates from Sorted Array II
 
 var removeDuplicates = function(nums) {
-    
+    let count = 0, current = 1;
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] !== nums[i - 1]) {
+            count = 0;
+            nums[current++] = nums[i];
+        } else {
+            count++;
+            if (count <= 1) nums[current++] = nums[i];
+        }
+    }
+    return current;
 };
 
 nums = [1,1,1,2,2,3]
