@@ -1422,6 +1422,23 @@ var exist = function(board, word) {
         visited.delete(`${r},${c}`);
         return res;
     };
+
+    const count = {};
+    for (const c of word) {
+        count[c] = (count[c] || 0) + 1;
+    }
+
+    if (count[word[0]] > count[word[word.length - 1]]) {
+        word = word.split('').reverse().join('');
+    }
+
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+            if (dfs(r, c, 0)) return true;
+        }
+    }
+
+    return false;  
 };
 
 board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
