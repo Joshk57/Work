@@ -1407,7 +1407,21 @@ nums = [1,2,3]
 // 79. Word Search
 
 var exist = function(board, word) {
-    
+    const rows = board.length;
+    const cols = board[0].length;
+    const visited = new Set();
+
+    const dfs = (r, c, k) => {
+        if (k === word.length) return true;
+        if (r < 0 || r >= rows || c < 0 || c >= cols || visited.has(`${r},${c}`) || board[r][c] !== word[k]) {
+            return false;
+        }
+
+        visited.add(`${r},${c}`);
+        const res = dfs(r + 1, c, k + 1) || dfs(r - 1, c, k + 1) || dfs(r, c + 1, k + 1) || dfs(r, c - 1, k + 1);
+        visited.delete(`${r},${c}`);
+        return res;
+    };
 };
 
 board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
